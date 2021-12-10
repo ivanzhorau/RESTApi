@@ -35,7 +35,7 @@ namespace RESTApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ILot> Post(ILot lot) //add new value
+        public ActionResult<ILot> Post(Lot lot) //add new value
         {
             if (lotControl.Post(lot) == Result.Error)
             {
@@ -44,7 +44,7 @@ namespace RESTApi.Controllers
             return Ok(lot);
         }
         [HttpPut]
-        public  ActionResult<ILot> Put(ILot lot) //change value
+        public  ActionResult<ILot> Put(Lot lot) //change value
         {
             if (lotControl.Put(lot) == Result.Error)
             {
@@ -55,7 +55,7 @@ namespace RESTApi.Controllers
 
 
         [HttpDelete]
-        public ActionResult<ILot> Delete(ILot lot) //delete value
+        public ActionResult<ILot> Delete(Lot lot) //delete value
         {
             if (lotControl.Delete(lot) == Result.Error) {
                 return BadRequest();

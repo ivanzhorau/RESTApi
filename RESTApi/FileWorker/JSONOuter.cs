@@ -91,7 +91,7 @@ namespace RESTApi.FileWorker
                 }
             }
             catch (Exception e) {
-                t = new Lot[0];
+                t = new Lot[1] { new Lot { ID = 0, Text="ERRATUM",ImagePath= "https://sun9-65.userapi.com/impg/S1k4FA0E8oWmqHSFpQVR-d-wKsXvAZwcy9w91g/9YEwsO_2ggc.jpg?size=750x827&quality=96&sign=b766ae39e4af4e3dad5f1486710bc1fe&type=album" } };
             }
             return t;
         }
